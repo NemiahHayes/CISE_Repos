@@ -23,6 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./worksheet2/my-react-app/
+        
+      - name: Set executable permissions for react-scripts
+        run: chmod +x node_modules/.bin/react-scripts
+        working-directory: ./worksheet2/my-react-app/
 
       - name: Run the tests
         run: npm test
