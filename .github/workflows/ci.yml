@@ -29,3 +29,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        
+        - name: Run the tests
+        run: npm test
+        working-directory: ./worksheet2
+
+      - name: Build
+        run: npm run build
+        working-directory: ./worksheet2
