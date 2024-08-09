@@ -25,6 +25,10 @@ jobs:
         run: npm install
         working-directory: ./worksheet2/my-react-app/
         
+      - name: Install missing Babel plugin
+        run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
+        working-directory: ./path/to/your/subfolder
+        
       - name: Set executable permissions for react-scripts
         run: chmod +x node_modules/.bin/react-scripts
         working-directory: ./worksheet2/my-react-app/
